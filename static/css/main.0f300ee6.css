@@ -1,0 +1,2 @@
+body{background-color:#f4f4f9;font-family:Arial,sans-serif;margin:0}.app,body{padding:20px}.app{background-color:#fff;border-radius:8px;box-shadow:0 0 10px #0000001a;margin:0 auto;max-width:600px}button{background-color:#4caf50;border:none;border-radius:5px;color:#fff;cursor:pointer;padding:5px 10px}button:hover{background-color:#45a049}button.active{background-color:#007bff}button:disabled{background-color:#ddd;cursor:not-allowed}.todo-item{align-items:center;display:flex;margin-bottom:10px}input[type=checkbox]{margin-right:10px}
+/*# sourceMappingURL=main.0f300ee6.css.map*/
