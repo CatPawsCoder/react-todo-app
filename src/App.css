@@ -1,73 +1,120 @@
+/* src/App.css */
+
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #f9f9f9;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0; /* Убираем отступы по умолчанию */
+}
+
+.app {
+  max-width: 600px;
+  margin: 50px auto; /* Добавляем отступ сверху */
+  background-color: white;
+  padding: 30px; /* Увеличиваем отступы внутри */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Улучшаем тень */
 }
 
 h1 {
-  color: #333;
   text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px; /* Отступ снизу */
 }
 
-form {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-form input {
-  width: 60%;
-  padding: 10px;
-  font-size: 16px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007BFF;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #0056b3;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: #fff;
-  margin: 5px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.todo-form,
+.filter {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-bottom: 20px; /* Отступ снизу */
 }
 
-li span {
-  flex: 1;
-  cursor: pointer;
-}
-
-li button {
-  background: #ff4d4d;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
+.todo-form input,
+.filter select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  cursor: pointer;
+  width: 75%;
+  margin-right: 10px;
 }
 
-li button:hover {
-  background: #e60000;
+.todo-form button,
+.filter button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 20%;
+  font-size: 16px;
+}
+
+.todo-form button:hover,
+.filter button:hover {
+  background-color: #45a049;
+}
+
+button.active {
+  background-color: #007bff;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.todo-list {
+  margin-top: 20px; /* Отступ сверху */
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Увеличиваем отступы между задачами */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.todo-item p {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+}
+
+.todo-item button {
+  background-color: #f44336; /* Красная кнопка для удаления */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.todo-item button:hover {
+  background-color: #d32f2f;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
